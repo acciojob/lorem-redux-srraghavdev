@@ -10,7 +10,9 @@ const App = () => {
   let x= useSelector((data)=>data)
   console.log(x)
   useEffect(()=>{
-    dispatch(getData())
+    setTimeout(()=>{
+      dispatch(getData())
+    },1000)
   },[])
   return (
     <div>
