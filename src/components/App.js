@@ -12,7 +12,7 @@ const App = () => {
   useEffect(()=>{
     setTimeout(()=>{
       dispatch(getData())
-    },1000)
+    },3000)
   },[])
   return (
     <div>
