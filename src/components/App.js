@@ -14,10 +14,13 @@ const App = () => {
   },[])
   return (
     <div>
-       <h1>loremipsum</h1>
-       {x.succ && x.succ.map(element=>{
-        return (<div>{element}</div>)
+       <h1>A short Naration of Lorem Ipsum</h1>
+       <h4>{x.loading ? 'Loading' : 'Lorem Posts' }</h4>
+       <ul>
+        {x.succ && x.succ.map(element=>{
+        return (<li>{element}</li>)
        })}
+       </ul>
     </div>
   )
 }
