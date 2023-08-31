@@ -19,7 +19,7 @@ const App = () => {
        <ul>
         {x.succ ? x.succ.map(element=>{
         return (<li><div className="title">Title :{element.title}</div><div className="body">Body :{element.body}</div></li>)
-       }) : <li>'Below Contains A title and Body gotten froma random API, Please take your time to Review' </li>}
+       }) : <li>Title :Loading tiltes</li>}
        </ul>
     </div>
   )
