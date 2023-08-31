@@ -25,6 +25,6 @@ export const getData = ()=>{
 
     return (dispatch)=>{
         dispatch(getloading())
-        axios.get('https://baconipsum.com/api/?type=meat-and-filler').then(data=>dispatch(getsucc(data.data))).catch(error=>dispatch(geterror(error.message)))
+        axios.get('https://jsonplaceholder.typicode.com/posts').then(data=>dispatch(getsucc(data.data))).catch(error=>dispatch(geterror(error.message)))
     }
 }
