@@ -18,7 +18,7 @@ const App = () => {
        <h4>{x.loading ? 'Loading' : 'Below Contains A title and Body gotten froma random API, Please take your time to Review' }</h4>
        <ul>
         {x.succ && x.succ.map(element=>{
-        return (<li className="title">{element}</li>)
+        return (<li><div className="title">Title : {element}</div><div className="body">Body : {element}</div></li>)
        })}
        </ul>
     </div>
